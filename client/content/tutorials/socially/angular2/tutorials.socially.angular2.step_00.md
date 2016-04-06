@@ -47,9 +47,9 @@ The default Meteor app starts life with three files, one `js`, one `html` and on
 
 We are going to add our own files for this tutorial. So let's start by deleting the following files:
 
-    - socially.css    (delete)
-    - socially.html   (delete)
-    - socially.js     (delete)
+    - client/main.css    (delete)
+    - client/main.html   (delete)
+    - client/main.js     (delete)
 
 Now we can start building our app.
 
@@ -70,20 +70,6 @@ Concatenation means merging the content of all `HTML`, `HEAD` and `BODY` tags fo
 So in our case, Meteor found our `index.html` file, recognized it was meant for the client only, found the `BODY` tag inside and added it's content to the `BODY` tag of the main generated file.
 
 > (right-click -> inspect element on the page to see the generated file)
-
-# NPM
-
-Npm stands for Node Packages Manager, which manages your dependencies and external packages.
-
-To initialize a new project with NPM, run in the command line:
-
-    $ npm init
-
-You'll be asked a few questions about some metadata related to your project, and then the `package.json` file will be created, which will hold the versions of the packages that are required by your app.
-
-The `package.json` looks like that:
-
-{{> DiffBox tutorialName="meteor-angular2-socially" step="0.3" filename="package.json"}}
 
 ## CommonJS
 
